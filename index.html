@@ -1,14 +1,7 @@
 <!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-
-	Customized by Max Kuhlman
--->
 <html>
 	<head>
-		<title>Max Kuhlman</title>
+		<title>Landing - Forty by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -20,37 +13,38 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>Max Kuhlman</strong></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+				<header id="header" class="alt">
+					<a href="index.html" class="logo"><strong>Max Kuhlman</strong></a>
+					<nav>
+						<a href="#menu">Menu</a>
+					</nav>
+				</header>
 
 				<!-- Menu -->
 					<nav id="menu">
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Magpie</a></li>
-							<li><a href="generic.html">Albatross</a></li>
-							<li><a href="elements.html">Strix</a></li>
-							<li><a href="elements.html">Icarus and Dædalus</a></li>
-							<li><a href="elements.html">Mechanical Fastener Sorter</a></li>
+							<li><a href="magpie.html">Magpie</a></li>
+							<li><a href="albatross.html">Albatross</a></li>
+							<li><a href="strix.html">Strix</a></li>
+							<li><a href="icarusanddaedalus.html">Icarus and Dædalus</a></li>
+							<li><a href="fastenersorter.html">Mechanical Fastener Sorter</a></li>
 						</ul>
 					</nav>
 
 				<!-- Banner -->
-					<section id="banner" class="major">
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
 						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
 							<header class="major">
 								<h1>Hi, my name is Max Kuhlman</h1>
 							</header>
 							<div class="content">
-								<p>I am an Electrical and Computer Engineering major at Rice University<br />
-								interested in avionics, autonomy, and embedded systems.</p>
-								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">My Projects</a></li>
-								</ul>
+								<p>I am an Electrical and Computer Engineering major at Rice University<br/>
+									interested in avionics, autonomy, and embedded systems.</p>
 							</div>
 						</div>
 					</section>
@@ -59,141 +53,176 @@
 					<div id="main">
 
 						<!-- One -->
-							<section id="one" class="tiles">
-								<article> <!-- SAE Aero Advanced 2025 -->
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
+							<section id="one">
+								<div class="inner">
 									<header class="major">
-										<h3><a href="landing.html" class="link">Magpie</a></h3>
-										<p>Rice Flight SAE Aero Advanced 2025</p>
+										<h2>My Projects</h2>
 									</header>
-								</article>
-								<article> <!-- SAE Aero Advanced 2024 -->
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Albatross</a></h3>
-										<p>Rice Flight SAE Aero Advanced 2024</p>
-									</header>
-								</article>
-								<article> <!-- Strix -->
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Strix</a></h3>
-										<p>Rice Eclipse Rocketry Team</p>
-									</header>
-								</article>
-								<article> <!-- Icarus and Daedalus -->
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Icarus and Dædalus</a></h3>
-										<p>Rice Eclipse 2023 Spaceport America Cup</p>
-									</header>
-								</article>
-								<article> <!-- Mechanical Fastener Sorter -->
-									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Mechanical Fastener Sorter</a></h3>
-										<p>Rice Engineering Design</p>
-									</header>
-								</article>
-								<!--
-								<article>
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Etiam</a></h3>
-										<p>Feugiat amet tempus</p>
-									</header>
-								</article> 
-								-->
+									<p>At Rice, I have spent most of my free time on various engineering design teams, mainly 
+										Rice Flight, the RC aircraft competition team run by the Rice Chapter of the American Insitute
+										of Aeronautics and Astronautics, and the Rice Eclipse rocketry team.
+									</p>
+								</div>
 							</section>
 
 						<!-- Two -->
-							<!--
-							<section id="two">
+							<section id="two" class="spotlights">
+								<section>
+									<a href="magpie.html" class="image">
+										<img src="images/pic08.jpg" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Magpie</h3>
+											</header>
+											<p>The Rice Flight entry into the SAE Aero Advanced 2025 competition, a 3.5 pound fully
+												autonomous aircraft capable of both conventional and vertical takeoff and landing. 
+												I am responsible for the avionics design of the craft, built around a Pixracer Pro 
+												flight controller and using a real-time-kinematic GPS system to enable centimeter-level precision 
+												while delivering and recovering payloads.
+											</p>
+											<ul class="actions">
+												<li><a href="magpie.html" class="button">Learn more</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="strix.html" class="image">
+										<img src="images/pic09.jpg" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Strix</h3>
+											</header>
+											<p>Strix is a rocket flight controller I designed and built around an STM32 microcontroller
+												to perform sensor fusion on accelerometer, altimeter, and gyroscope readings, as well as 
+												trigger in-flight events with 6 pyrotechnic channels.
+											</p>
+											<ul class="actions">
+												<li><a href="strix.html" class="button">Learn more</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="albatross.html" class="image">
+										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Albatross</h3>
+											</header>
+											<p>Albatross is the primary aircraft for the Rice Flight entry into the 2024 SAE Aero Advanced
+												Competition. I designed all of the avionics for both the primary aircraft and the fully autonomous
+												'PADA's, small gliders designed to deploy from the primary aircraft in flight and autonomously land in
+												target zones.
+											</p>
+											<ul class="actions">
+												<li><a href="albatross.html" class="button">Learn more</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="icarusanddaedalus.html" class="image">
+										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Icarus and Daedalus</h3>
+											</header>
+											<p>Icarus and Daedalus was Rice Eclipse'stwo-stage entry into the 30 thousand foot category of the 2023
+												Spaceport America Cup. The rocket launched with a 4 kilogram payload, a deployable drone (named pigeon) that was designed to 
+												be released at an altitude of 1500 feet and autonomously navigate to a landing zone while recording geo-tagged 
+												images. I was responsible for designing and implementing the deploymnt system, which received a signal from an 
+												altimeter to release the drone.
+											</p>
+												<li><a href="icarusanddaedalus.html" class="button">Learn more</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="fastenersorter.html" class="image">
+										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Mechanical Fastener Sorter</h3>
+											</header>
+											<p>For a course related design project, I worked with a team of three other people to design a sorter for mechanical 
+												fasteners. The device was based around a Raspberry Pi running a custom computer-vision algorithm written using Python 
+												and OpenCV, and intergrated servo and stepper motors to sort items.
+											</p>
+												<li><a href="fastenersorter.html" class="button">Learn more</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
 								<div class="inner">
 									<header class="major">
-										<h2>Massa libero</h2>
+										<h2>Contact Me</h2>
 									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-									<ul class="actions">
-										<li><a href="landing.html" class="button next">Get Started</a></li>
-									</ul>
+									<p>I'd love to hear from you! Feel free to reach out through the form below or directly via email.</p>
 								</div>
 							</section>
-							-->
 					</div>
 
 				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
+				<section id="contact">
+					<div class="inner">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="primary" /></li>
+									<li><input type="reset" value="Clear" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split">
 							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
+								<div class="contact-method">
+									<span class="icon alt fa-envelope"></span>
+									<h3>Email</h3>
+									<a href="#">max.kuhlman@rice.edu</a>
+								</div>
 							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">max.kuhlman@rice.edu</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon alt fa-home"></span>
-										<h3>Address</h3>
-										<span>6310 Main Street<br />
-										Houston, TX 77005<br />
-										United States of America</span>
-									</div>
-								</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon alt fa-home"></span>
+									<h3>Address</h3>
+									<span>6310 Main Street<br />
+									Houston, TX 77005<br />
+									United States of America</span>
+								</div>
 							</section>
-						</div>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="maxtk4.github.com" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="linkedin.com/in/max-kuhlman" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Max Kuhlman 2024</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
-
-			</div>
+						</section>
+					</div>
+				</section>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
