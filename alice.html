@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Albatross - Max Kuhlman</title>
+		<title>ALICE - Max Kuhlman</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -42,15 +42,16 @@
 									<header class="major">
 										<h1>Generic</h1>
 									</header>
-									<p><span class="image right"><img src="images/Albatross_Ground.jpg" alt="" /></span>
-										Albatross was Rice Flight's entry into the 2024 SAE Aero Advanced competition. I designed all of the 
-										avionics in both Albatross itself as well as the Powered Autonomous Delivery Aircrafts (PADAs), which 
-										were fully autonomous and integrated GPS, accelerometers, and an ultrasonic rangefinder to land in target 
-										zones after being deployed in flight by Albatross.</p>
-									<p>The primary aircraft used a Cube Orange+ flight controller running Ardupilot, and communicated to the ground 
-										with a 915MHz telemetry radio to control payload deployed. The wiring diagram for Albatross is shown below.
+									<span class="image main"><img src="images/ALICE_Dashboard.png" alt="" /></span>
+									<p>ALICE: Advanced Logging Instrument for Computational Evaluation is a custom ground station software I designed 
+										to fulfill the need for a Data Acquisition System for the 2024 SAE Aero Advanced competition. It gets live telemetry 
+										from flight vehicles using MAVLink, and display statistics as well as a GPS map showing the current and past locations 
+										of the vehicle.
 									</p>
-									<span class="image main"><img src="images/Albatross_Wiring_Diagram.png" alt="" /></span>
+									<p>The software is written in Python to run on a laptop, and communicates via a telemetry radio using the PyMAVLink library. For 
+										the frontend, I used Qt and pyside6 to make a responsive, rapidly updating UI to display data with as little latency as 
+										possible.
+									</p>
 									<p></p>
 								</div>
 							</section>
