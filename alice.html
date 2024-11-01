@@ -48,11 +48,17 @@
 										from flight vehicles using MAVLink, and display statistics as well as a GPS map showing the current and past locations 
 										of the vehicle.
 									</p>
-									<p>The software is written in Python to run on a laptop, and communicates via a telemetry radio using the PyMAVLink library. For 
-										the frontend, I used Qt and pyside6 to make a responsive, rapidly updating UI to display data with as little latency as 
-										possible.
+									<p>I started designing the software by writing the backend, the portion of the code responsible for connecting to the vehicle 
+										through a telemetry radio, requesting data streams, and then live recording these data streams and packaging them into objects 
+										for the frontend to display. I wrote this software on top of the open source PyMAVLink library, which provides methods and objects 
+										for sending and receiving messages encoded in the MAVLink protocol.
 									</p>
-									<p></p>
+									<p>The frontend is designed using Qt and the Qt company's python libraries, specifically pyside6. It creates an app, and then populates 
+										it with various widgets and layouts, including a live-updating HUD, icons and tooltips for various telemetry statistics about the vehicle 
+										and the telemetry link quality, and a live-updating GPS map which displays the location of the vehicle at a rate of 20Hz. While the 
+										user is interacting with the software, it provides a few menus for configuring the link to the vehicle, which trigger methods in the backend 
+										to connect and start requesting different data packets at different rates.
+									</p>
 								</div>
 							</section>
 
