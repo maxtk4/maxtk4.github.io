@@ -42,6 +42,8 @@
 									<header class="major">
 										<h1>Strix</h1>
 									</header>
+									<span class="image fit"><img src="images/Strix_Page_Header.png" alt="" /></span>
+									<h3>Overview</h3>
 									<p>Strix is a custom flight computer I designed from scratch around an STM32L476 chip. It is designed to
 										replace and improve upon to features available on commercial rocket flight controllers, and is equipped 
 										with accelerometers, gyroscopes, a magnetometer, and a barometric altimeter to accurately estimate position. I designed Strix using KiCAD, and programmed using a combination of STM32CubeMX and STM32CubeIDE. The software 
@@ -50,19 +52,19 @@
 									</p>
 									<div class="box alt">
 										<div class="row gtr-50 gtr-uniform">
-											<div class="col-4"><span class="image fit"><img src="images/Strix_Render_Back.png" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/Strix_Render_Front.png" alt="" /></span></div>
-										</div>
-										<div class="row gtr-50 gtr-uniform">
-											<div class="col-4"><span class="image fit"><img src="images/Strix_Routing_Back.png" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/Strix_Routing_Front.png" alt="" /></span></div>
+											<div class="col-3"><span class="image fit"><img src="images/Strix_Render_Back.png" alt="" /></span></div>
+											<div class="col-3"><span class="image fit"><img src="images/Strix_Render_Front.png" alt="" /></span></div>
+											<div class="col-3"><span class="image fit"><img src="images/Strix_Routing_Back.png" alt="" /></span></div>
+											<div class="col-3"><span class="image fit"><img src="images/Strix_Routing_Front.png" alt="" /></span></div>
 										</div>
 									</div>
+									<h3>Design Process</h3>
 									<p>
 										I started the design by creating a list of design requirements, and then selected components based on several metrics, including cost, 
 										availability, ease of use/reliability, and fulfilling the design requirements. After selecting the components, I created a schematic in KiCAD for each component and 
 										the interconnects between them, and then routed the components to minimize electrical noise and PCB size. The design files are in a <a href="https://github.com/rice-eclipse/flight-computer">github repository here</a>.
 									</p>
+									<h3>Testing</h3>
 									<p>After ordering the PCBs from JLCPCB, I tested the power supply stability with various input voltages and an oscilloscope, and confirmed that the board 
 										succesfully functions. The software was tested to record data from a flight and print it out when connected to a computer, 
 										and is able to fire pyrotechnics on any of the channels.</p>

@@ -53,11 +53,19 @@
 										are based around a Pixracer Pro running Ardupilot, and communicating to the ground via a dual 2.4 GHz RC link and 915 MHz telemetry 
 										link, which is primarily used for a real-time-kinematic GPS system.
 									</p>
+									<h3>Custom Power Supply PCB</h3>
 									<p>To save weight, I designed a custom PCB to provide power to the servos and flight controller. It uses two TPS61033
 										boost converters to take the 3.5-4.2 volts from a single-celled lithium polymer battery and provide both flight controller 
-										and servos with a stable 5 volt supply. I also designed a custom PCB for the payload, which is based on an Atmel Atmega328p-au 
-										microcontroller and uses light intensity measured with photoresistors to control electromagnets and a linear servo and allow 
-										easy recovery of the payload by Magpie.
+										and servos with a stable 5 volt supply.</p>
+									<h3>Payload</h3>
+									<p><span class="image left"><img src="images/Payload_Render_Front.png" alt="" /></span>
+										<span class="image right"><img src="images/Payload_Routing_Front.png" alt="" /></span>
+										Magpie's main task is to autonomously deliver and recover payloads from a designated landing zone. To accomplish this,
+										The team is designing an auoonomous payload that both deploys and reattaches to Magpie based on sensor information. To deploy, 
+										a pair of electromagnets in the payload are signalled by the flight controller in Magpie to turn off. To recover, the payload then extends 
+										a linear servo to push a mechanical attachment system against the bottom of the plane. For this payload, I designed all of the elctronic systems 
+										and wrote the majority of the control software in C++. I also designed a custom PCB for the payload, which is based on an Atmel Atmega328p-au 
+										microcontroller and uses light intensity measured with photoresistors for control input.
 									</p>
 								</div>
 							</section>
